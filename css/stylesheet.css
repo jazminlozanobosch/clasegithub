@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 80px ;
+    grid-template-areas:
+    "header header header"
+    "main main section"
+    "footer footer footer"
+    ;
+    height: 100vh;
+}
+header{
+    background-color: coral;
+    grid-area: header;
+    display: flex;
+}
+main{
+    background-color: aquamarine;
+    grid-area: main;
+    justify-self: center;
+}
+section{
+    background-color: crimson;
+    grid-area: section;
+}
+footer{
+    background-color: chocolate;
+    grid-area: footer;
+    display: flex;
+}
